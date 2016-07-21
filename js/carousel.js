@@ -27,7 +27,7 @@ for (var i = 1; i < items.length; i++) {
 previous.addEventListener('click', previousItem);
 next.addEventListener('click', nextItem);
 
-function previousItem() {
+function previousItem(event) {
   event.preventDefault();
   if(current == 0) {
     items[current].style.opacity = 0;
@@ -51,7 +51,7 @@ function previousItem() {
   }
 }
 
-function nextItem() {
+function nextItem(event) {
   event.preventDefault();
   if(current == items.length - 1) {
     items[current].style.opacity = 0;
