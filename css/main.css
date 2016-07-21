@@ -1,0 +1,116 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #8e919e;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul > li > i {
+  margin-right: 5px;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+  color: #8e919e;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  height: inherit;
+  padding: 0 15px 0 15px;
+}
+
+.menu {
+  background-color: #222629;
+  overflow: hidden;
+  height: 55px;
+}
+
+.menu a:hover {
+  color: #00bff3;
+}
+
+.menu .horizontal {
+  margin: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.half {
+  max-width: 50%;
+}
+
+ul.horizontal > li {
+  display: inline-block;
+  padding: 15px;
+}
+
+ul.horizontal > li:first-child {
+  padding-left: 0;
+}
+
+ul.horizontal > li:last-child {
+  padding-right: 0;
+}
+
+.logo {
+  width: 100px;
+}
+
+#inicio {
+  height: calc(100vh - 55px);
+  background-color: #f04e4e;
+  color: #fff;
+}
+
+#inicio .title {
+  font-weight: normal;
+  font-size: 48px;
+}
+
+#inicio ul > li {
+  padding-bottom: 10px;
+}
+
+#sobre {
+  height: 100vh;
+  background-color: #fafafa;
+  position: relative;
+  padding: 55px 0 0 0;
+}
+
+#sobre::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  border-top: 20px solid #f04e4e;
+  left: 50%;
+  top: 0;
+}
+
+#sobre .item {
+  width: calc(33% - 40px);
+  display: inline-block;
+  padding: 20px;
+}
+
+#sobre .item img {
+  width: 100%;
+}
