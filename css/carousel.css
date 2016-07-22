@@ -23,22 +23,22 @@
   transform: translateY(-50%);
 }
 
-.carousel > .previous {
+.carousel-controls > .previous {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 20px;
   z-index: 1;
 }
 
-.carousel > .previous i, .carousel > .next i {
+.carousel-controls > .previous i, .carousel-controls > .next i {
   color: #fff;
   font-size: 48px;
 }
 
-.carousel > .next {
+.carousel-controls > .next {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 20px;
   z-index: 1;
 }
 

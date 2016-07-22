@@ -16,9 +16,6 @@
         <div class="left">
           <ul class="horizontal">
             <li>
-              <i class="fa fa-bars"></i>
-            </li>
-            <li>
               <img class="logo" src="img/senai-logo.svg" alt="Logotipo do SENAI">
             </li>
           </ul>
@@ -90,20 +87,22 @@
       </div>
       <div class="right half">
         <ul class="carousel">
-          <div class="previous">
-            <a href="#">
-              <i class="fa fa-angle-left"></i>
-            </a>
-          </div>
           <li class="item"><img src="img/html5.png" alt="Imagem HTML5"></li>
           <li class="item"><img src="img/CSS3.png" alt="Imagem CSS3"></li>
           <li class="item"><img src="img/js.png" alt="Imagem JS"></li>
-          <div class="next">
-            <a href="#">
-              <i class="fa fa-angle-right"></i>
-            </a>
-          </div>
         </ul>
+      </div>
+      <div class="carousel-controls">
+        <div class="previous">
+          <a href="#">
+            <i class="fa fa-angle-left"></i>
+          </a>
+        </div>
+        <div class="next">
+          <a href="#">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -138,9 +137,110 @@
         <p>Nós podemos quebrar a internet em duas partes específicas: nós temos a parte onde nós enxergamos, que basicamente é baseada em HTML, CSS e JS. É onde seres humanos interagem com nosso produto e nosso site.</p>
         <span>Fonte: <strong><a href="http://tableless.com.br/linked-data-e-json-ld/" target="_blank">Tableless</a></strong></span>
       </article>
+
     </div>
   </section>
 
+  <section id="precos">
+    <div class="wrapper">
+      <h2 class="title">Preços dos cursos</h2>
+      <table class="table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-orange">
+              <h2>HTML</h2>
+              <span>20 horas</span>
+            </th>
+            <th class="table-blue">
+              <h2>CSS</h2>
+              <span>20 horas</span>
+            </th>
+            <th class="table-yellow">
+              <h2>JS</h2>
+              <span>30 horas</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-orange">Introdução</td>
+            <td class="table-blue">Seletores</td>
+            <td class="table-yellow">Variáveis</td>
+          </tr>
+          <tr>
+            <td class="table-orange">Tags básicas</td>
+            <td class="table-blue">Cores(HEX, RGB, RGBA)</td>
+            <td class="table-yellow">Operadores lógicos</td>
+          </tr>
+          <tr>
+            <td class="table-orange">Semântica</td>
+            <td class="table-blue">Propriedades</td>
+            <td class="table-yellow">Estruturas de decisão</td>
+          </tr>
+          <tr>
+            <td class="table-orange">Meta tags</td>
+            <td class="table-blue">Pseudo seletores</td>
+            <td class="table-yellow">Estruturas de repetição</td>
+          </tr>
+          <tr>
+            <td class="table-orange">Melhorando seu ranking no Google</td>
+            <td class="table-blue">CSS Compilado(Sass, Less, Stylus)</td>
+            <td class="table-yellow">Funções</td>
+          </tr>
+          <tr>
+            <td class="table-orange">
+              <a class="button" href="#">Comprar</a>
+            </td>
+            <td class="table-blue">
+              <a class="button" href="#">Comprar</a>
+            </td>
+            <td class="table-yellow">
+              <a class="button" href="#">Comprar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrapper">
+      <h2 class="title">Entre em contato</h2>
+      <form name="contatoForm">
+        <div class="group">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" placeholder="Nome">
+        </div>
+
+        <div class="group">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email">
+        </div>
+
+        <div class="group">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" rows="8" cols="40" placeholder="Mensagem"></textarea>
+        </div>
+
+        <button>Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="left">
+        <img class="logo" src="img/senai-logo.svg" alt="Logotipo do SENAI">
+      </div>
+      <div class="right">
+        <span>Feito com o <i class="fa fa-heart"></i></span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#inicio" class="scroll-top"><i class="fa fa-angle-up"></i></a>
+
   <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
