@@ -155,26 +155,29 @@ ul.horizontal > li:last-child {
 }
 
 #precos .table {
-  width: 100%;
+  float: left;
+  width: calc(100% / 3);
   text-align: center;
   color: #fff;
-  table-layout: fixed;
-  border-spacing: 0;
 }
 
 #precos .table  h2 {
   margin-top: 0;
 }
 
-.table .table-header th {
+.table .table-header {
   padding: 20px;
 }
 
-.table tbody td {
+.table .table-body > ul {
+  margin: 0;
+}
+
+.table .table-body > ul > li {
   padding: 20px;
 }
 
-.table tbody tr:last-child td {
+.table .table-body > ul > li:last-child {
   padding-bottom: 40px;
 }
 
@@ -185,6 +188,7 @@ ul.horizontal > li:last-child {
   border-radius: 20px;
   display: inline-block;
   font-weight: bold;
+  transition: all .3s ease-in;
 }
 
 .table .table-orange .button:hover {
@@ -214,19 +218,15 @@ ul.horizontal > li:last-child {
   background-color: #29a9df;
 }
 
-.table > .table-header {
-  width: 100%;
-}
-
-.table > .table-header .table-orange {
+.table > .table-header.table-orange {
   background-color: #e44d26;
 }
 
-.table > .table-header .table-yellow {
+.table > .table-header.table-yellow {
   background-color: #efc725;
 }
 
-.table > .table-header .table-blue {
+.table > .table-header.table-blue {
   background-color: #0170ba;
 }
 
@@ -271,6 +271,7 @@ ul.horizontal > li:last-child {
   cursor: pointer;
   font-weight: bold;
   margin-bottom: 20px;
+  transition: all .3s ease-in;
 }
 
 #contato form button:hover {

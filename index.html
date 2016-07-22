@@ -42,10 +42,22 @@
 
   <section id="inicio">
     <div class="wrapper">
-      <div class="left half carousel-text-container">
-        <div class="carousel-text">
-          <ul>
-            <li class="item">
+      <div class="carousel">
+        <div class="carousel-controls">
+          <div class="previous">
+            <a href="#">
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </div>
+          <div class="next">
+            <a href="#">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li class="item">
+            <div class="left">
               <h2 class="title">Eu amo <strong>HTML</strong></h1>
               <ul>
                 <li>
@@ -61,8 +73,13 @@
                   <i class="fa fa-check"></i>Cadê os lorem ipsum?
                 </li>
               </ul>
-            </li>
-            <li class="item">
+            </div>
+            <div class="right">
+              <img src="img/html5.png" alt="Imagem HTML5">
+            </div>
+          </li>
+          <li class="item">
+            <div class="left">
               <h2 class="title">Eu amo <strong>CSS</strong></h2>
               <ul>
                 <li>
@@ -72,37 +89,26 @@
                   <i class="fa fa-check"></i>Dá pra fazer um site bonitão
                 </li>
                 <li>
-                  <i class="fa fa-check"></i>Dá até pra fazer aquela animação
+                  <i class="fa fa-check"></i>Dá até pra fazer aquela animação marota que eu curto
                 </li>
                 <li>
                   <i class="fa fa-check"></i>Cadê os background?
                 </li>
               </ul>
-            </li>
-            <li class="item">
+            </div>
+            <div class="right">
+              <img src="img/CSS3.png" alt="Imagem CSS3">
+            </div>
+          </li>
+          <li class="item">
+            <div class="left">
               <h2 class="title">Mas nunca me esqueço do famoso <strong>JS</strong></h2>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="right half">
-        <ul class="carousel">
-          <li class="item"><img src="img/html5.png" alt="Imagem HTML5"></li>
-          <li class="item"><img src="img/CSS3.png" alt="Imagem CSS3"></li>
-          <li class="item"><img src="img/js.png" alt="Imagem JS"></li>
+            </div>
+            <div class="right">
+              <img src="img/js.png" alt="Imagem JS">
+            </div>
+          </li>
         </ul>
-      </div>
-      <div class="carousel-controls">
-        <div class="previous">
-          <a href="#">
-            <i class="fa fa-angle-left"></i>
-          </a>
-        </div>
-        <div class="next">
-          <a href="#">
-            <i class="fa fa-angle-right"></i>
-          </a>
-        </div>
       </div>
     </div>
   </section>
@@ -144,62 +150,54 @@
   <section id="precos">
     <div class="wrapper">
       <h2 class="title">Preços dos cursos</h2>
-      <table class="table">
-        <thead class="table-header">
-          <tr>
-            <th class="table-orange">
-              <h2>HTML</h2>
-              <span>20 horas</span>
-            </th>
-            <th class="table-blue">
-              <h2>CSS</h2>
-              <span>20 horas</span>
-            </th>
-            <th class="table-yellow">
-              <h2>JS</h2>
-              <span>30 horas</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="table-orange">Introdução</td>
-            <td class="table-blue">Seletores</td>
-            <td class="table-yellow">Variáveis</td>
-          </tr>
-          <tr>
-            <td class="table-orange">Tags básicas</td>
-            <td class="table-blue">Cores(HEX, RGB, RGBA)</td>
-            <td class="table-yellow">Operadores lógicos</td>
-          </tr>
-          <tr>
-            <td class="table-orange">Semântica</td>
-            <td class="table-blue">Propriedades</td>
-            <td class="table-yellow">Estruturas de decisão</td>
-          </tr>
-          <tr>
-            <td class="table-orange">Meta tags</td>
-            <td class="table-blue">Pseudo seletores</td>
-            <td class="table-yellow">Estruturas de repetição</td>
-          </tr>
-          <tr>
-            <td class="table-orange">Melhorando seu ranking no Google</td>
-            <td class="table-blue">CSS Compilado(Sass, Less, Stylus)</td>
-            <td class="table-yellow">Funções</td>
-          </tr>
-          <tr>
-            <td class="table-orange">
-              <a class="button" href="#">Comprar</a>
-            </td>
-            <td class="table-blue">
-              <a class="button" href="#">Comprar</a>
-            </td>
-            <td class="table-yellow">
-              <a class="button" href="#">Comprar</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table table-orange">
+        <div class="table-header table-orange">
+          <h2>HTML</h2>
+          <span>20 horas</span>
+        </div>
+        <div class="table-body table-orange">
+          <ul>
+            <li>Introdução</li>
+            <li>Tags básicas</li>
+            <li>Semântica</li>
+            <li>Meta tags</li>
+            <li>Melhorando seu ranking no Google</li>
+            <li><a class="button" href="#">Comprar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="table table-blue">
+        <div class="table-header table-blue">
+          <h2>CSS</h2>
+          <span>20 horas</span>
+        </div>
+        <div class="table-body table-blue">
+          <ul>
+            <li>Seletores</li>
+            <li>Cores(HEX, RGB, RGBA)</li>
+            <li>Propriedades</li>
+            <li>Pseudo seletores</li>
+            <li>CSS Compilado(Sass, Less, Stylus)</li>
+            <li><a class="button" href="#">Comprar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="table table-yellow">
+        <div class="table-header table-yellow">
+          <h2>JS</h2>
+          <span>40 horas</span>
+        </div>
+        <div class="table-body table-yellow">
+          <ul>
+            <li>Variáveis</li>
+            <li>Operadores lógicos</li>
+            <li>Estruturas de decisão</li>
+            <li>Estruturas de repetição</li>
+            <li>Funções</li>
+            <li><a class="button" href="#">Comprar</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -227,7 +225,7 @@
         </form>
       </div>
       <div class="right">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8895271625406!2d-46.64850708443685!3d-23.53647546656012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sEscola+SENAI+de+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1469209666981" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8895271625406!2d-46.64850708443685!3d-23.53647546656012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sEscola+SENAI+de+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1469209666981" width="800" height="553" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </section>
