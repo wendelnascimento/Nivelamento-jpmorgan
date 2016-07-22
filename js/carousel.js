@@ -6,8 +6,8 @@ var textCarousel = document.querySelector('.carousel-text');
 var items = document.querySelectorAll('.carousel .item');
 var textItems = document.querySelectorAll('.carousel-text .item');
 
-var previous = document.querySelector('.carousel .previous');
-var next = document.querySelector('.carousel .next');
+var previous = document.querySelector('.carousel-controls .previous');
+var next = document.querySelector('.carousel-controls .next');
 
 var current = 0;
 

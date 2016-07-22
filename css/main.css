@@ -19,6 +19,10 @@ a, a:active, a:visited {
   color: #8e919e;
 }
 
+article {
+  display: inline-block;
+}
+
 .wrapper {
   max-width: 1200px;
   display: block;
@@ -32,6 +36,8 @@ a, a:active, a:visited {
   background-color: #222629;
   overflow: hidden;
   height: 55px;
+  position: relative;
+  z-index: 10;
 }
 
 .menu a:hover {
@@ -40,6 +46,7 @@ a, a:active, a:visited {
 
 .menu .horizontal {
   margin: 0;
+  line-height: 55px;
 }
 
 .left {
@@ -56,7 +63,7 @@ a, a:active, a:visited {
 
 ul.horizontal > li {
   display: inline-block;
-  padding: 15px;
+  padding: 0 15px 0 15px;
 }
 
 ul.horizontal > li:first-child {
@@ -69,15 +76,17 @@ ul.horizontal > li:last-child {
 
 .logo {
   width: 100px;
+  vertical-align: middle;
 }
 
 #inicio {
-  height: calc(100vh - 55px);
+  height: calc(100vh);
   background-color: #f04e4e;
   color: #fff;
+  margin-top: -55px;
 }
 
-#inicio .title {
+.title {
   font-weight: normal;
   font-size: 48px;
 }
@@ -87,8 +96,8 @@ ul.horizontal > li:last-child {
 }
 
 #sobre {
-  height: 100vh;
-  background-color: #fafafa;
+  min-height: calc(100vh - 55px);
+  background-color: #fff;
   position: relative;
   padding: 55px 0 0 0;
 }
@@ -106,11 +115,176 @@ ul.horizontal > li:last-child {
 }
 
 #sobre .item {
-  width: calc(33% - 40px);
+  max-width: calc(100% / 3);
   display: inline-block;
-  padding: 20px;
+  /*padding: 20px;*/
+  text-align: center;
+  float: left;
 }
 
 #sobre .item img {
   width: 100%;
+}
+
+#sobre article span {
+  font-size: 12px;
+}
+
+#precos {
+  min-height: calc(100vh - 55px);
+  background-color: #fafafa;
+  position: relative;
+  padding: 0 0 55px 0;
+}
+
+#precos .table {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+#precos .table  h2 {
+  margin-top: 0;
+}
+
+.table .table-header th {
+  padding: 20px;
+}
+
+.table tbody td {
+  padding: 20px;
+}
+
+.table .button {
+  padding: 10px;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.table .table-orange .button:hover {
+  background-color: #fff;
+  color: #f16529;
+}
+
+.table .table-blue .button:hover {
+  background-color: #fff;
+  color: #29a9df;
+}
+
+.table .table-yellow .button:hover {
+  background-color: #fff;
+  color: #fbde34;
+}
+
+.table .table-orange {
+  background-color: #f16529;
+}
+
+.table .table-yellow {
+  background-color: #fbde34;
+}
+
+.table .table-blue {
+  background-color: #29a9df;
+}
+
+.table > .table-header {
+  width: 100%;
+}
+
+.table > .table-header .table-orange {
+  background-color: #e44d26;
+}
+
+.table > .table-header .table-yellow {
+  background-color: #efc725;
+}
+
+.table > .table-header .table-blue {
+  background-color: #0170ba;
+}
+
+#contato {
+  min-height: calc(100vh - 55px);
+  background-color: #0170ba;
+  position: relative;
+  padding: 0 0 55px 0;
+  color: #fff;
+}
+
+#contato form input, #contato form textarea {
+  display: block;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  /* border-radius: 30px; */
+  padding: 20px;
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+  resize: none;
+  margin-top: 5px;
+}
+
+
+#contato form button {
+  padding: 20px 50px;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  background: transparent;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+}
+
+#contato form button:hover {
+  background: #fff;
+  color: #0170ba;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+#contato form > .group {
+  padding: 20px 0 20px 0;
+}
+
+footer {
+  background-color: #222629;
+  padding: 50px;
+}
+
+a.scroll-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #f04e4e;
+  border-radius: 50%;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  display: none;
 }
