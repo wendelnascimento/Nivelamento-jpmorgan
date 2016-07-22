@@ -32,6 +32,8 @@ a, a:active, a:visited {
   background-color: #222629;
   overflow: hidden;
   height: 55px;
+  position: relative;
+  z-index: 10;
 }
 
 .menu a:hover {
@@ -72,9 +74,10 @@ ul.horizontal > li:last-child {
 }
 
 #inicio {
-  height: calc(100vh - 55px);
+  height: calc(100vh);
   background-color: #f04e4e;
   color: #fff;
+  margin-top: -55px;
 }
 
 #inicio .title {
@@ -87,7 +90,7 @@ ul.horizontal > li:last-child {
 }
 
 #sobre {
-  height: 100vh;
+  height: calc(100vh - 55px);
   background-color: #fafafa;
   position: relative;
   padding: 55px 0 0 0;
@@ -106,11 +109,16 @@ ul.horizontal > li:last-child {
 }
 
 #sobre .item {
-  width: calc(33% - 40px);
+  max-width: calc(33% - 40px);
   display: inline-block;
   padding: 20px;
+  text-align: center;
 }
 
 #sobre .item img {
   width: 100%;
+}
+
+#sobre article span {
+  font-size: 12px;
 }
