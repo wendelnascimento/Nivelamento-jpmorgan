@@ -56,6 +56,7 @@ h2 {
   opacity: 0;
   left: 50%;
   width: 80%;
+  max-width: 1200px;
 }
 
 .carousel .item .left {

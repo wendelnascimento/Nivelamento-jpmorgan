@@ -242,12 +242,11 @@ ul.horizontal > li:last-child {
 }
 
 #contato form input, #contato form textarea {
-  display: block;
   width: 100%;
   background: rgba(0, 0, 0, 0.1);
   border: none;
   /* border-radius: 30px; */
-  padding: 20px;
+  padding: 20px 10px;
   color: #fff;
   font-family: 'Fira Sans', sans-serif;
   resize: none;
@@ -279,6 +278,10 @@ ul.horizontal > li:last-child {
   color: #0170ba;
 }
 
+#contato iframe {
+
+}
+
 ::-webkit-input-placeholder {
   color: #e0e0e0;
   font-family: 'Fira Sans', sans-serif;
@@ -300,7 +303,7 @@ ul.horizontal > li:last-child {
 }
 
 #contato form > .group {
-  padding: 20px 0 20px 0;
+  padding: 20px 20px 20px 0px;
 }
 
 footer {
