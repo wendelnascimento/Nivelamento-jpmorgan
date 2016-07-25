@@ -12,14 +12,11 @@ var current = 0;
 for (var i = 1; i < items.length; i++) {
   items[0].style.opacity = 1;
 
-  items[i].style.top = 0;
-  items[0].style.top = 0;
-
   items[i].style.position = 'absolute';
   items[0].style.position = 'absolute';
 
-  items[i].style.top = items[0].offsetTop + 'px';
-  items[i].style.width = items[0].offsetWidth + 'px';
+  items[i].style.top = 0;
+  items[0].style.top = 0;
 }
 
 previous.addEventListener('click', previousItem);
