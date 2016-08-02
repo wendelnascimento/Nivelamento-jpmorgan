@@ -14,9 +14,6 @@ for (var i = 1; i < items.length; i++) {
 
   items[i].style.position = 'absolute';
   items[0].style.position = 'absolute';
-
-  items[i].style.top = 0;
-  items[0].style.top = 0;
 }
 
 previous.addEventListener('click', previousItem);
