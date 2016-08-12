@@ -59,6 +59,10 @@ h2 {
   max-width: 1200px;
 }
 
+.carousel .item:first-child {
+  opacity: 1;
+}
+
 .carousel .item .left {
   position: absolute;
   top: 50%;
